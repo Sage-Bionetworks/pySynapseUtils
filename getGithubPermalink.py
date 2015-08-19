@@ -1,4 +1,4 @@
-"""Get permalink to git commit for a specific path.
+"""Get permalink to github commit for a specific path.
 
 """
 
