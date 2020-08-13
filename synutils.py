@@ -30,7 +30,7 @@ def create_html_file(html_link):
     html_content = html_template.substitute(HTML_LINK=html_link)
     f.write(html_content)
     f.close()
-    os.chmod(html_file_name, 0755) #make the file web readable before upload
+    os.chmod(html_file_name, 0o777) #make the file web readable before upload
     return(html_file_name)
 
 def s3manage(args):
